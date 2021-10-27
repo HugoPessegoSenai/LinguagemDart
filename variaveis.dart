@@ -17,6 +17,7 @@ print("Raio:  $raio");
 
 //Variavel que armazena textos
 String nome = "Hugo";
+String nome1 = "Juliano";
 print("Olá meu nome é $nome");
 
 //Variavel que armazena verdadeira e falso
@@ -35,8 +36,29 @@ print(numeros);
 //IMPRIMINDO O NUMERO DO INDICE 1:
 print(numeros[1]);
 
-//
+//Lista do tipo string 
 List<String>pessoas = ["wanderson", "alunos", "junior", "bruno"];
 print(pessoas[1]); 
 
+//Variavel que guarda um dicionario com chave e valor em forma de texto
+Map<String, String> pesquisaNomes = {"Hugo":"Christian",
+                                     "Fernando": "Costa",
+                                     "Juliano": "Lima",
+                                     "João": "Gomes",
+                                     "Maria": "Jose"};
+      //key  valor
+//Variavel sem tipo definido
+var sobrenome = pesquisaNomes[nome];
+var sobrenome2 = pesquisaNomes[nome1];
+var sobrenome3 = pesquisaNomes["Maria"];
+
+print("O sobrenome do $nome é $sobrenome");
+print("O sobrenome do $nome1 é $sobrenome2");
+print("O sobrenome do Maria é $sobrenome3");
+
+//Variavel dinamica
+dynamic x = 10;
+print(x);
+x = "Dados";
+print(x);
 }
